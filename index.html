@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PixelWork Agency</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="PixelWork">
+  </div>
+
+  <nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Serviços</a>
+  <a href="portfolio.html">Portfólio</a>
+  <a href="contact.html">Contato</a>
+</nav>
+
+  <button id="hamburger">☰</button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h1>Agência Digital Futurista</h1>
+    <p class="lead">Criamos experiências digitais intensas, avançadas e impactantes.</p>
+<div class="buttons">
+  <a href="web-design.html" class="btn btn-primary">Nossos Serviços</a>
+  <a href="apps-apis.html" class="btn btn-secondary">Ver Projetos</a>
+</div>
+<section>
+  <div class="cards">
+    <a href="web-design.html" class="card">
+      <h3>Web Design</h3>
+      <p>Interfaces modernas e responsivas.</p>
+    </a>
+
+    <a href="apps-apis.html" class="card">
+      <h3>Apps & APIs</h3>
+      <p>Integrações reais e apps avançados.</p>
+    </a>
+
+    <a href="branding.html" class="card">
+      <h3>Branding</h3>
+      <p>Identidade visual profissional.</p>
+    </a>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2>Contacto</h2>
+<form id="contactForm">
+  <input type="text" name="name" placeholder="Nome" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Mensagem" required></textarea>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
+</section>
+
+<!-- ASSISTENTE IA -->
+<div id="ai-button">🤖</div>
+
+<div id="ai-chat">
+  <div class="ai-header">
+    <span>Assistente IA</span>
+    <button id="close-ai">✖</button>
+  </div>
+  <div id="chat-messages"></div>
+  <div class="ai-input">
+    <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+    <button id="send-btn">Enviar</button>
+  </div>
+</div>
+<footer>
+  <p>© 2026 PixelWork Agency</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("SUA_PUBLIC_KEY_AQUI");
+})();
+</script>
+
+<script src="app.js"></script>
+</body>
+</html><
